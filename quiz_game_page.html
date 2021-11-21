@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <title>Project 89 to 92</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="quiz_game.css">
+    </head>
+    <body onload="setallthings()">
+        <h4 id="player1_name"></h4><span id="player1_score"></span>
+        <h4 id="player2_name"></h4><span id="player2_score"></span>
+
+        <div class="container">
+            <center>
+                <h1 style="color: white;">Math Quiz Game</h1>
+                <h4 id="question_player">Question Turn : </h4><span id="question_player_name"></span>
+                <h4 id="answer_player">Answer Turn : </h4><span id="answer_player_name"></span>
+                <div id="div_output"></div>
+                <br>
+                <label class="da_labels">Number 1</label>
+                <br>
+                <input placeholder="Number 1" type="text" id="input_number_1">
+                <br>
+                <label class="da_labels">Number 2</label>
+                <br>
+                <input placeholder="Number 2" type="text" id="input_number_2">
+                <br>
+                <br>
+                <button onclick="send()" id="button_make_question">Send</button>
+            </center>
+        </div>
+
+        <script src="quiz_game_page.js"></script>
+        <script src="quiz_game_login.js"></script>
+    </body>
+</html>
